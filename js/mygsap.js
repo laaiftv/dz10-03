@@ -1,0 +1,57 @@
+const tl = gsap.timeline()
+tl.from('.decore__line3',{
+
+x:-1000,
+duration:2
+},
+0,
+)
+tl.from('.decore__line1',{
+    x:1000,
+    duration:1
+    },
+    0,
+    )
+tl.from('.decore__line2',{
+        x:-1200,
+        opacity:0,
+        duration:1.5
+        },
+        0.5
+        )
+tl.from('.decore__line-p4',{
+            y:-200,
+            opacity:0,
+            duration:2
+            },
+            0.7
+            )
+tl.from('.decore__title',{
+    scale:0,
+    opacity:0,
+    duration:2
+    },
+    0.7
+)
+
+tl.from('.decore__dshi',{
+    x:200,
+opacity:0,
+duration:1
+},
+0.9
+)
+tl.from('.decore__img-right',{
+    scale:0,
+opacity:0,
+duration:1
+},
+0.9
+)
+tl.from('.decore__img-right2',{
+    // scale:0,
+opacity:0,
+duration:1
+},
+0.9
+)

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/preloader.css">
+    <link rel="stylesheet" href="./fonts/font-style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/nullstyle.css">
+    <link rel="stylesheet" href="./menu-css/events-head-decor-menu.css">
+    <link rel="stylesheet" href="./menu-css/events-style-menu.css">
+    <link rel="stylesheet" href="./css/style-events.css">
+    <!-- <link rel="stylesheet" href="./css/all-media.css"> -->
+    <!-- <link rel="stylesheet" href="./css/media.css"> -->
+    <title>DZart</title>
+</head>
+<!-- =================================================================== -->
+
+<body>
+    <div id="preloader">
+        <div class="spinner">
+            <img src="./img/preloader.svg" alt="">
+        </div>
+    </div>
+    <header id="menu">
+        <button class="menu-burger"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+            aria-label="Main Menu">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path class="line line1"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+        <div class="decore__line00"></div>
+        <div class="decore__line0"></div>
+        <div class="decore__line5"></div>
+        <div class="container-header__menu">
+            <div class="header__block">
+                <div class="header__bg-decor">
+                    <div class="title-first">
+                        <marquee>
+                            Государственное учреждение образования “Дзержинская детская школа искусств
+                        </marquee>
+                    </div>
+                    <div class="decore__line1"></div>
+                    <div class="decore__line2"></div>
+                    <div class="decore__line3"></div>
+                    <div class="decore__line4"></div>
+                    <div class="decore__line-p4"></div>
+                    <div class="decore__line6"></div>
+                    <div class="logo__circle"></div>
+                    <div class="box-logo"></div>
+                    <div class="logo"></div>
+                    <div class="decore__img-right2"></div>
+                    <div class="decore__img-right"></div>
+                    <div class="decore__title"></div>
+                    <div class="decore__dshi"></div>
+                </div>
+            </div>
+            <nav class="dws-menu">
+                <input type="checkbox" name="toggle" id="minu" class="toggleMenu" />
+                <label for="minu" class="toggleMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m0" />
+                        <a href="index.html">Главная</a>
+                        <label for="sub_m0" class="toggleSubmenu"></label>
+                        <ul>
+                            <li><a href="index.html#admin-page">Администрация</a></li>
+                            <li><a href="index.html#letter">Обратная связь</a></li>
+                            <li><a href="index.html#page_address">Адрес</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1" />
+                        <a href="index.html#courses">Отделения</a>
+                        <label for="sub_m1" class="toggleSubmenu"></label>
+                        <ul>
+                            <li><a href="courses.html#fa-no">Фортепиано</a></li>
+                            <li><a href="courses.html#two-string">Струнно-смычковые</a></li>
+                            <li>
+                                <a href="courses.html#three-accordeon">Баян-аккордеон</a>
+                            </li>
+                            <li><a href="courses.html#foure-folck">Струнно-народные</a></li>
+                            <li><a href="courses.html#five-brass">Духовые</a></li>
+                            <li><a href="courses.html#six-choir">Хоровое</a></li>
+                            <li><a href="courses.html#seven-dancing">Хореография</a></li>
+                            <li><a href="courses.html#eight-art">Художественное</a></li>
+                            <li><a href="courses.html#nine-estrada">Эстрадное</a></li>
+                            <li>
+                                <a href="courses.html#ten-children-school">Школа раннего развития</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m2" />
+                        <a href="index.html#block__collective">Коллективы</a>
+                        <label for="sub_m2" class="toggleSubmenu"></label>
+                        <ul>
+                            <li><a href="collective.html#page-1-pastorale">Пастораль</a></li>
+                            <li><a href="collective.html#page-2-vjaselka">Вясёлка</a></li>
+                            <li><a href="collective.html#page-3-krytogorochka">Крутогорочка</a></li>
+                            <li><a href="collective.html#page-4-kantabile">Кантабиле</a></li>
+                            <li><a href="collective.html#page-5-misterius">Мистериус</a></li>
+                            <li><a href="collective.html#page-6-nastroenie">Настроение</a></li>
+                            <li><a href="collective.html#page-7-elegija">Элегия</a></li>
+                            <li><a href="collective.html#page-8-tonika">Тоника</a></li>
+                            <li><a href="collective.html#page-9-quartet">кв-Виолончелистов</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m3" />
+                        <a href="events.html#ads">События</a>
+                        <label for="sub_m3" class="toggleSubmenu"></label>
+                        <ul>
+                            <li><a class="ah" href="#ads">Объявления</a></li>
+                            <li><a class="ah" href="#contests">Конкурсы</a></li>
+                            <li><a class="ah" href="#pro">Достижения</a></li>
+                            <li><a class="ah" href="#proff">Профсоюзы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m4" />
+                        <a href="archive.html#video">Архив</a>
+                        <label for="sub_m4" class="toggleSubmenu"></label>
+                        <ul>
+                            <li><a href="archive.html#video">Видео</a></li>
+                            <li><a href="archive.html#photo">Фото</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--SECTION ads------------------------------------------------------ -->
+    <section id="ads" class="ads">
+        <div class="ads__decore-line-1"></div>
+        <div class="container-ads">
+            <div class="contest__doc"></div>
+
+            <div class="ads__title">
+                <h4>ОБЪЯВЛЕНИЯ</h4>
+            </div>
+            <div class="block__ads">
+                <div class="ads__posters">
+                    <a href="./img/events/ads/img-1.jpg">
+                        <div class="poster p1">
+                            <img src="./img/events/ads/img-1.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="./img/events/ads/img-3.jpg">
+                        <div class="poster p2">
+                            <img src="./img/events/ads/img-3.jpg" alt="">
+                        </div>
+                    </a>
+
+                    <a href="./img/events/ads/img-4.jpg">
+                        <div class="poster p3">
+                            <img src="./img/events/ads/img-4.jpg" alt="">
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+    </section>
+    <!--------- ads END ------------------------------------------>
+    <!--SECTION contests------------------------------------------------------ -->
+    <section id="contests" class="contests">
+        <div class="first">
+            <div class="ads__decore-line-1"></div>
+            <div class="container-ads">
+                <div class="contest__title">
+                    <h4>КОНКУРСЫ</h4>
+                </div>
+                <div class="contest first">
+                    <div class="decore__circle-big"></div>
+                    <div class="decore__circle-small"></div>
+
+                    <div class="contest__subtitle">
+                        <span>Открытый региональный фестиваль - конкурс
+                            патриотической песни Фестиваль-конкурс
+                            проводится ежегодно.</span>
+                    </div>
+
+                    <div class="contest__logo">
+                        <img src="./img/events/ads/LOGO-krut-zar.png" alt="">
+                    </div>
+                    <div class="contest__img-1">
+                        <img src="./img/events/contast-1/img-1.jpg" alt="">
+                    </div>
+                    <div class="contest__img-2">
+                        <img src="./img/events/contast-1/img-2.jpg" alt="">
+                    </div>
+                    <div class="contest__subtitle-2">
+                        <span>Открытый региональный фестиваль - конкурс
+                            патриотической песни Фестиваль-конкурс
+                            проводится ежегодно.</span>
+                    </div>
+                    <div class="contest__led-title">
+                        <h4>Крутагорскія зарніцы</h4>
+                    </div>
+                    <div class="contest__doc">
+                        <div class="doc-title">
+                            <h5>ПОЛОЖЕНИЕ
+                                КОНКУРСА</h5>
+                        </div>
+                        <div class="doc__link">
+                            <a href="./img/events/documents/Положение-конкурса-Крутагорскія-зарніцы-2021.pdf">
+                                <div class="link-pdf">
+                                    <img src="./img/events/contast-1/pdf-logo.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="./img/events/documents/Положение конкурса Крутагорскія зарніцы-2021.docx">
+                                <div class="link-word">
+                                    <img src="./img/events/contast-1/microsoft-word-logo.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- --------------------------------------------- -->
+        <div class="second">
+            <div class="ads__decore-line-1"></div>
+            <div class="container-ads">
+                <!-- <div class="contest__title">
+                    <h4>КОНКУРСЫ</h4>
+                </div> -->
+                <div class="contest first">
+                    <div class="decore__circle-big"></div>
+
+                    <div class="decore__circle-small"></div>
+                    <!-- <div class="ads__decore-line-2"></div> -->
+                    <div class="contest__subtitle">
+                        <span>Открытый региональный фестиваль - конкурс
+                            патриотической песни Фестиваль-конкурс
+                            проводится ежегодно.</span>
+                    </div>
+
+                    <div class="contest__logo">
+                        <img src="./img/events/ads/LOGO-kyf.png" alt="">
+                    </div>
+                    <div class="contest__img-1">
+                        <img src="./img/events/contast-2/img-1.jpg" alt="">
+                    </div>
+                    <div class="contest__img-2">
+                        <img src="./img/events/contast-2/img-2.jpg" alt="">
+                    </div>
+                    <div class="contest__subtitle-2">
+                        <span>Открытый региональный фестиваль - конкурс
+                            патриотической песни Фестиваль-конкурс
+                            проводится ежегодно.</span>
+                    </div>
+                    <div class="contest__led-title">
+                        <h4>Дзяржынскi-куфэрак</h4>
+                    </div>
+                    <div class="contest__doc">
+                        <div class="doc-title">
+                            <h5>ПОЛОЖЕНИЕ
+                                КОНКУРСА</h5>
+                        </div>
+                        <div class="doc__link">
+                            <a href="./img/events/documents/Положение-проект-Дзяржынскi-куфэрак 2022.pdf">
+                                <div class="link-pdf">
+                                    <img src="./img/events/contast-1/pdf-logo.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="./img/events/documents/Положение-проект Дзяржынскi куфэрак 2022.docx">
+                                <div class="link-word">
+                                    <img src="./img/events/contast-1/microsoft-word-logo.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pro" class="pro">
+        <div class="progress">
+            <div class="ads__decore-line-1"></div>
+            <div class="decore__circle-small small-pro"></div>
+            <div class="container-ads">
+                <!-- <div class="ads__decore-line-2"></div> -->
+                <div class="contest__title">
+                    <h4>ДОСТИЖЕНИЯ</h4>
+                </div>
+                <!--block-double-1 -----2021-2022  -->
+                <div class="contest first">
+                    <div class="pre__progress-block block-double-1">
+                        <div class="title-box">
+                            <div class="box-line left"></div>
+                            <div class="title__year">2021-2022</div>
+                            <div class="box-line right"></div>
+                        </div>
+                        <div class="progress-block block-double-1">
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2021-2022-1.jpg">
+                                    <div class="contest__subtitle progress progress-1">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2021-2022-1icon.jpg" alt="">
+                                        </div>
+                                        <span>2021</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2021-2022-2.jpg">
+                                    <div class="contest__subtitle progress">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2021-2022-1icon.jpg" alt="">
+                                        </div>
+                                        <span>2022</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--block-double-2 -----2020-2021  -->
+                    <div class="pre__progress-block block-double-2">
+                        <div class="title-box">
+                            <div class="box-line left"></div>
+                            <div class="title__year">2020-2021</div>
+                            <div class="box-line right"></div>
+                        </div>
+                        <div class="progress-block">
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2020-2021-1.jpg">
+                                    <div class="contest__subtitle progress progress-1">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2020-2021-1icon.jpg" alt="">
+                                        </div>
+                                        <span>2020</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2020-2021-2.jpg">
+                                    <div class="contest__subtitle progress">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2020-2021-2icon.jpg" alt="">
+                                        </div>
+                                        <span>2021</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--block-double-3 -----2018  -->
+                <div class="contest first-2">
+                    <div class="pre__progress-block block-double-3">
+                        <div class="title-box">
+                            <div class="box-line left"></div>
+                            <div class="title__year">2018</div>
+                            <div class="box-line right"></div>
+                        </div>
+                        <div class="progress-block">
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2018-1.jpg">
+                                    <div class="contest__subtitle progress progress-1">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2018-1icon.jpg" alt="">
+                                        </div>
+                                        <span>2018</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2018-2.jpg">
+                                    <div class="contest__subtitle progress">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2018-2icon.jpg" alt="">
+                                        </div>
+                                        <span>2018</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--block-double-4 -----2017  -->
+                    <div class="pre__progress-block block-double-4">
+                        <div class="title-box">
+                            <div class="box-line left"></div>
+                            <div class="title__year">2017</div>
+                            <div class="box-line right"></div>
+                        </div>
+                        <div class="progress-block">
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2017-1.jpg">
+                                    <div class="contest__subtitle progress progress-1">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2017-1icon.jpg" alt="">
+                                        </div>
+                                        <span>2017</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2017-2.jpg">
+                                    <div class="contest__subtitle progress">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2017-2icon.jpg" alt="">
+                                        </div>
+                                        <span>2017</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--block-double-5 -----2016  -->
+                <div class="contest first-3">
+                    <div class="pre__progress-block block-double-5">
+                        <div class="title-box">
+                            <div class="box-line left"></div>
+                            <div class="title__year">2016</div>
+                            <div class="box-line right"></div>
+                        </div>
+                        <div class="progress-block">
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2016-1.jpg">
+                                    <div class="contest__subtitle progress progress-1">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2016-1icon.jpg" alt="">
+                                        </div>
+                                        <span>2016</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2016-2.jpg">
+                                    <div class="contest__subtitle progress">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2016-2icon.jpg" alt="">
+                                        </div>
+                                        <span>2016</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--block-double-6 -----2015  -->
+                    <div class="pre__progress-block block-double-6">
+                        <div class="title-box">
+                            <div class="box-line left"></div>
+                            <div class="title__year">2015</div>
+                            <div class="box-line right"></div>
+                        </div>
+                        <div class="progress-block">
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2015-1.jpg">
+                                    <div class="contest__subtitle progress progress-1">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2015-1icon.jpg" alt="">
+                                        </div>
+                                        <span>2015</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2015-2.jpg">
+                                    <div class="contest__subtitle progress">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2015-2icon.jpg" alt="">
+                                        </div>
+                                        <span>2015</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- block-double 7  ---  2013-2014  -->
+                <div class="contest first-3">
+                    <div class="pre__progress-block block-double-7">
+                        <div class="title-box">
+                            <div class="box-line left"></div>
+                            <div class="title__year">2013-2014</div>
+                            <div class="box-line right"></div>
+                        </div>
+                        <div class="progress-block">
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2013.jpg">
+                                    <div class="contest__subtitle progress progress-1">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2013icon.jpg" alt="">
+                                        </div>
+                                        <span>2013</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2014.jpg">
+                                    <div class="contest__subtitle progress">
+
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2014icon.jpg" alt="">
+                                        </div>
+                                        <span>2014</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--pre__progress-block 2016-2015  -->
+                    <!-- <div class="pre__progress-block">
+                        <div class="title-box">
+                            <div class="box-line left"></div>
+                            <div class="title__year">2014</div>
+                            <div class="box-line right"></div>
+                        </div>
+                        <div class="progress-block">
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2014-1.jpg">
+                                    <div class="contest__subtitle progress progress-1">
+                
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2015-1icon.jpg" alt="">
+                                        </div>
+                                        <span>2015</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="progress__placat">
+                                <a href="./img/events/placats/2015-2.jpg">
+                                    <div class="contest__subtitle progress">
+                
+                                        <div class="progress__img-1">
+                                            <img src="./img/events/placats/2015-2icon.jpg" alt="">
+                                        </div>
+                                        <span>2015</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="null-block"></div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION proff -->
+    <section id="proff" class="proff">
+        <div class="first">
+            <div class="ads__decore-line-1"></div>
+            <div class="container-ads">
+                <div class="contest__title">
+                    <h4>ПРОФСОЮЗ</h4>
+                </div>
+                <div class="contest first">
+                    <div class="decore__circle-big"></div>
+
+                    <div class="decore__circle-small"></div>
+
+                    <div class="contest__subtitle">
+                        <span>Плетнёва Наталья Викентьевна
+                        </span>
+                        <p>председатель профкома</p>
+                    </div>
+
+                    <div class="contest__logo">
+                        <img src="./img/events/proff/foto.png" alt="">
+                    </div>
+                    <div class="contest__img-2">
+
+                        <div class="main__imagic">
+                            <img class='photo_slider_css' src="./img/events/proff/0001.jpg" alt="" />
+                            <img class='photo_slider_css' src="./img/events/proff/0002.jpg" alt="" />
+                            <img class='photo_slider_css' src="./img/events/proff/0003.jpg" alt="" />
+                            <img class='photo_slider_css' src="./img/events/proff/0004.jpg" alt="" />
+                        </div>
+
+                        <div class="main__imagic-text">
+                            <h6>ФЕДЕРАЦИЯ ПРОФСОЮЗОВ
+                                БЕЛАРУСИ -</h6>
+                            <h5>самая массовая общественная
+                                организация страны, объединяющая около</h5>
+                            <h4>4 000 000</h4>
+                            <h3>человек</h3>
+                        </div>
+                    </div>
+                    <div class="contest__subtitle-2">
+                        <span>Список членов профсоюзной организации
+                            ГУО «Дзержинская ДШИ»</span>
+                    </div>
+                    <div class="contest__subtitle-2 subtitle-3">
+                        <!-- <span>Список членов профсоюзной организации
+                            ГУО «Дзержинская ДШИ»</span> -->
+                        <p>Костюк И.В.</p>
+                        <p>Гроховская М.В.</p>
+                        <p>Артюшевский А.А.</p>
+                        <p>Густовская П.О.</p>
+                        <p>Безмен Л.Ф.</p>
+                        <p>Василевский М.И.</p>
+                        <p>Василевская С.В.</p>
+                        <p>Дарашевич И.Е.</p>
+                        <p>Дощечко О.А.</p>
+                        <p>Жибрик О.В.</p>
+                        <p>Иванова О.Р.</p>
+                        <p>Карницкая Е.А.</p>
+                        <p>Климаков В.В.</p>
+                        <p>Кригер Н.В.</p>
+                        <p>Лукьянова И.Ф.</p>
+                        <p>Ляхова Н.А.</p>
+                        <p>Марченко И.Л.</p>
+                        <p>Мазуркевич О.Ю.</p>
+                        <p>Мацкевич Н.В.</p>
+                        <p>Нарейко И.С.</p>
+                        <p>Парамонова В.В.</p>
+                        <p>Позняк С.И.</p>
+                        <p>Пак Г.П.</p>
+                        <p>Петкевич Е.Ф.</p>
+                        <p>Плетнёва Н.В.</p>
+                        <p>Радевич В.И.</p>
+                        <p>Радевич Е.Г.</p>
+                        <p>Раткевич Е.В.</p>
+                        <p>Саковская Е.Д.</p>
+                        <p>Сенькова Н.П.</p>
+                        <p>Сикорская А.В.</p>
+                        <p>Стельмашук Т.А.</p>
+                        <p>Сидорович Е.М.</p>
+                        <p>Тимошко Т.Л.</p>
+                        <p>Хачатурян В.В.</p>
+                        <p>Чичиро О.С.</p>
+                        <p>Шумская Т.И.</p>
+                        <p>Щербин В.И.</p>
+                    </div>
+
+                    <!-- <div class="contest__led-title">
+                        <h4>ГУО «Дзержинская ДШИ»</h4>
+                    </div> -->
+                    <div class="contest__doc"></div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- -----FOOTER------------------------------------------------- -->
+    <!-- -----FOOTER------------------------------------------------- -->
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="phone">8-01716-6 51 38 директор
+        </div>
+        <div class="phone">
+            8-01716-6 45 79 приемная
+        </div>
+        <div class="fax">
+            8-01716-6 51 38 fax</div>
+        <h6 class="footer__adress-p">&copy; 2023 Минская обл. г.Дзержинск ул.Ленинградская д.2 инд. 222720</h6>
+    </footer>
+    <!-- contests END ----------------------------------------------------------->
+    <!-- <footer class="footer"></footer> -->
+
+
+
+
+
+
+    <!-- JQUERY BURGER MENU -->
+    <script src="./js/preloader.js"></script>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/t.js"></script> <!-- JQUERY BURGER MENU -->
+    <!-- animate -->
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <script src="./js/mygsap.js"></script>
+    <!-- animate -->
+    <script src="./js/scroll.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+#collective {
+    width: 100%;
+    height: 163px;
+}
+
+.collective {
+
+    background: #fdf6d8c9;
+    padding: 70px 0px 100px 0px;
+
+}
+
+
+
+.collective__wripper {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    top: 15px;
+    width: 100%;
+    height: 1200px;
+}
+
+.decor__brush {
+    margin: auto;
+    position: absolute;
+    top: 260px;
+    left: 0;
+    right: 0;
+    width: 521px;
+    height: 153px;
+    opacity: 68%;
+    background-image: url(../img/collective/brush.png);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: drop-shadow(5px 5px 5px rgba(122, 122, 122, 0.7));
+    z-index: 3;
+}
+
+.collective__wripper>.section__title {
+    position: absolute;
+    font-size: 55px;
+    top: 248px;
+    left: 65px;
+    right: 0;
+    z-index: 3;
+}
+
+.title1 {
+    position: absolute;
+    top: 305px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 178px;
+    height: 58px;
+    background-image: url(../img/collective/ТВОРЧЕСКИЕ_.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 4;
+    filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
+
+}
+
+.title-img {
+    color: #000;
+    position: absolute;
+    top: 379px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 643px;
+    height: 140px;
+    z-index: 4;
+    background: #9a000047
+    filter: drop-shadow(23px 68px 20px #250404);
+    filter: drop-shadow(2px -34px 29px #250404);
+    /* filter: drop-shadow(6px 6px 16px rgba(255, 255, 255, 100%)); */
+
+
+}
+
+/* .coll{
+    filter: drop-shadow(5px 5px 5px 5px rgba(255, 255, 255, 0.7));
+} */
+
+.collective__frames {
+    position: absolute;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.coll__frames-blocks {
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 86px;
+    justify-content: center;
+}
+
+.name__frame {
+    font-weight: 100;
+    font-size: 27px;
+    color: #fff;
+    margin: 10px;
+}
+
+.fr__block-1 {
+    margin: 86px 17px 0px 17px;
+    width: 420px;
+    height: 284px;
+    background-image: url(../img/collective/Пастораль-ps.jpg);
+}
+
+
+
+.fr__block-2 {
+    margin: 0px 17px;
+    width: 369px;
+    height: 266px;
+    background-image: url(../img/collective/Крутогорочка-ps_.jpg);
+    z-index: 2;
+}
+
+.fr__block-3 {
+    margin: 86px 17px 0px 17px;
+    width: 369px;
+    height: 266px;
+    background-image: url(../img/collective/Настроение-ps.jpg);
+    z-index: 4;
+}
+
+.nf-3 {
+    padding-top: 194px;
+    padding-left: 213px;
+}
+
+.fr__block-4 {
+    margin: 10px 17px 0px 75px;
+    width: 364PX;
+    height: 278px;
+    background-image: url(../img/collective/Вяселка-ps.jpg);
+}
+
+.nf-4 {}
+
+.fr__block-5 {
+    margin: 46px 14px 0px 20px;
+    width: 341px;
+    height: 278px;
+    background-image: url(../img/collective/Кантабиле-ps.jpg);
+    z-index: 2;
+}
+
+.nf-5 {
+    padding-top: 208px;
+    padding-left: 4px;
+}
+
+.fr__block-6 {
+    margin: -3px 17px 0px 21px;
+    width: 361px;
+    height: 260px;
+    background-image: url(../img/collective/Тоника-ps.jpg);
+    z-index: 4;
+}
+
+.nf-6 {
+    padding-top: 194px;
+    padding-left: 249px;
+}
+
+.fr__block-7 {
+    margin: -26px 0px 0px 70px;
+    width: 248PX;
+    height: 258px;
+    background-image: url(../img/collective/К.В-ps.jpg);
+}
+
+.nf-7 {
+    padding-top: 194px;
+    padding-left: 12px;
+}
+
+
+.fr__block-8 {
+    margin: 10px 14px 0px 14px;
+    width: 416px;
+    height: 264px;
+    background-image: url(../img/collective/Мистериус-ps.jpg);
+    z-index: 2;
+}
+
+.nf-8 {
+    padding-top: 194px;
+    padding-left: 258px;
+}
+
+.fr__block-9 {
+    margin: -51px 17px 0px -3px;
+    width: 248px;
+    height: 327px;
+    background-image: url(../img/collective/Элегия-ps.jpg);
+    z-index: 4;
+}
+
+.nf-9 {
+    padding-top: -6px;
+    padding-left: 138px;
+}
+
+.fr__block-1,
+.fr__block-2,
+.fr__block-3,
+.fr__block-4,
+.fr__block-5,
+.fr__block-6,
+.fr__block-7,
+.fr__block-8,
+.fr__block-9 {
+    border: 8px solid #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 5px 10px gray, -5px -10px 20px rgb(247 247 247 / 41%);
+    opacity: 90%;
+    transition: all 0.5s ease-in-out;
+}
+
+.fr__block-1:hover,
+.fr__block-2:hover,
+.fr__block-3:hover,
+.fr__block-4:hover,
+.fr__block-5:hover,
+.fr__block-6:hover,
+.fr__block-7:hover,
+.fr__block-8:hover,
+.fr__block-9:hover {
+    opacity: 100%;
+    border: 9px solid #b9f8fa;
+    transition: all 0.5s ease-in-out;
+
+
+}

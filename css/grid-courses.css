@@ -1,0 +1,485 @@
+/* ============== GRID ONE- fa-no  ========================================================= */
+
+/* +++++++++++++++++++++++++++ 7 pergons ++++++++++++++++++++++++ */
+.one>.container>.subblock-persons,
+.foure-folck>.container>.subblock-persons{
+    display: grid;
+    grid-template-columns: repeat(8, 8%);
+    grid-template-rows: repeat(2, 328px);
+    grid-column-gap: 2%;
+    grid-row-gap: 13%;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.one>.container>.subblock-persons>.frame-1,
+.foure-folck>.container>.subblock-persons>.frame-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.one>.container>.subblock-persons>.frame-2,
+.foure-folck>.container>.subblock-persons>.frame-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+
+}
+
+.one>.container>.subblock-persons>.frame-3,
+.foure-folck>.container>.subblock-persons>.frame-3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+
+}
+
+.one>.container>.subblock-persons>.frame-4,
+.foure-folck>.container>.subblock-persons>.frame-4 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+
+}
+
+.one>.container>.subblock-persons>.frame-5,
+.foure-folck>.container>.subblock-persons>.frame-5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+
+}
+
+.one>.container>.subblock-persons>.frame-6,
+.foure-folck>.container>.subblock-persons>.frame-6 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+
+}
+
+.one>.container>.subblock-persons>.frame-7,
+.foure-folck>.container>.subblock-persons>.frame-7 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+
+}
+/*++++++++++++++++++++++++++++++++ 5 persons ++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.two-string>.container>.subblock-persons,
+.three-accordeon>.container>.subblock-persons {
+    display: grid;
+    grid-template-columns: repeat(10, 8%);
+    grid-column-gap: 2%;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    position: relative;
+    aspect-ratio: 4/1.5;
+    margin-top: 11px;
+}
+
+.two-string>.container>.subblock-persons>.frame-1,
+.three-accordeon>.container>.subblock-persons>.frame-1 {
+    grid-column-start: 1;
+grid-column-end: 3;
+}
+
+.two-string>.container>.subblock-persons>.frame-2,
+.three-accordeon>.container>.subblock-persons>.frame-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+
+}
+
+.two-string>.container>.subblock-persons>.frame-3,
+.three-accordeon>.container>.subblock-persons>.frame-3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+
+}
+
+.two-string>.container>.subblock-persons>.frame-4,
+.three-accordeon>.container>.subblock-persons>.frame-4 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    /* grid-row: 2; */
+}
+
+.two-string>.container>.subblock-persons>.frame-5,
+.three-accordeon>.container>.subblock-persons>.frame-5 {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    /* grid-row: 2; */
+
+}
+
+/*++++++++++++++++++++++++++++++++ 3 persons ++++++++++++++++++++++++++++++++++++++++++++++*/
+.five-brass>.container>.subblock-persons {
+    display: grid;
+    grid-template-columns: repeat(6, 8%);
+    grid-column-gap: 2%;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    position: relative;
+    aspect-ratio: 4/1.5;
+    margin-top: 11px;
+}
+.five-brass>.container>.subblock-persons>.frame-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.five-brass>.container>.subblock-persons>.frame-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+
+}
+
+.five-brass>.container>.subblock-persons>.frame-3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+
+}
+/*++++++++++++++++++++++++++++++++ 2 persons ++++++++++++++++++++++++++++++++++++++++++++++*/
+.seven-dancing>.container>.subblock-persons {
+    display: grid;
+    grid-template-columns: repeat(4, 8%);
+    grid-column-gap: 2%;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    position: relative;
+    aspect-ratio: 4/1.5;
+    margin-top: 11px;
+}
+.seven-dancing>.container>.subblock-persons>.frame-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.seven-dancing>.container>.subblock-persons>.frame-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+
+}
+
+
+/* ?============================ GRID ALL MEDIA ======================================================== */
+
+
+/* ?-----------------------------1600------------------------------------------- */
+@media all and (max-width: 1600px) {
+    .one>.container>.subblock-persons,
+    .foure-folck>.container>.subblock-persons{
+        grid-template-columns: repeat(8, 9%);
+}
+.two-string>.container>.subblock-persons,
+.three-accordeon>.container>.subblock-persons {
+    grid-template-columns: repeat(10, 9%);
+}
+.five-brass>.container>.subblock-persons {
+    grid-template-columns: repeat(6, 9%);
+}
+}
+
+/* ?-----------------------------1360------------------------------------------- */
+@media all and (max-width: 1360px){
+    .one>.container>.subblock-persons,
+    .foure-folck>.container>.subblock-persons {
+        grid-template-columns: repeat(8, 9.5%);
+        grid-template-rows: repeat(2, 320px);
+        grid-row-gap: 5%;
+
+    }
+    .two-string>.container>.subblock-persons,
+    .three-accordeon>.container>.subblock-persons {
+        grid-template-columns: repeat(10, 9.5%);
+    }
+    .five-brass>.container>.subblock-persons {
+        grid-template-columns: repeat(6, 9.5%);
+    }
+
+}
+/* ?======================1260======================================================*/
+@media all and (max-width: 1260px){
+    .one>.container>.subblock-persons,
+    .foure-folck>.container>.subblock-persons {
+        grid-template-columns: repeat(8, 10.5%);
+        margin-top: 0px;
+    }
+    .two-string>.container>.subblock-persons,
+    .three-accordeon>.container>.subblock-persons {
+        grid-template-columns: repeat(10, 10.5%);
+    }
+    .five-brass>.container>.subblock-persons {
+        grid-template-columns: repeat(6, 10.5%);
+    }
+
+
+    }
+
+/* ?-----------------------------1024------------------------------------------- */
+@media all and (max-width: 1024px){
+    .two-string>.container>.subblock-persons,
+    .three-accordeon>.container>.subblock-persons{
+    grid-template-columns: repeat(6, 10.5%);
+    grid-template-rows: repeat(2, 328px);
+    grid-column-gap: 3%;
+    }
+    .two-string>.container>.subblock-persons>.frame-4,
+    .three-accordeon>.container>.subblock-persons>.frame-4 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row: 2;
+    }
+    
+    .two-string>.container>.subblock-persons>.frame-5,
+    .three-accordeon>.container>.subblock-persons>.frame-5 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row: 2;
+    
+    }
+
+}
+/* ?============ 850px ================================================================== */
+
+@media all and (max-width: 850px) {
+    .one>.container>.subblock-persons,
+    .foure-folck>.container>.subblock-persons {
+        grid-template-rows: repeat(2, 262px);
+    }
+        .two-string>.container>.subblock-persons,
+        .three-accordeon>.container>.subblock-persons {
+            grid-template-rows: repeat(2, 281px);
+        }
+    }
+
+/* ?============ 650px ================================================================== */
+@media all and (max-width: 650px) {
+    /* -------------GRID one---------------------- */
+    .one>.container>.subblock-persons,
+    .foure-folck>.container>.subblock-persons {
+        grid-template-columns: repeat(6, 11.5%);
+        grid-template-rows: repeat(3, 222px);
+        grid-row-gap: 12%;
+    grid-column-gap: 4%;
+    }
+    .one>.container>.subblock-persons>.frame-1,
+    .foure-folck>.container>.subblock-persons>.frame-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    
+    }
+    
+    .one>.container>.subblock-persons>.frame-2,
+    .foure-folck>.container>.subblock-persons>.frame-2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    
+    
+    }
+    
+    .one>.container>.subblock-persons>.frame-3,
+    .foure-folck>.container>.subblock-persons>.frame-3 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+    
+    }
+    
+    .one>.container>.subblock-persons>.frame-4,
+    .foure-folck>.container>.subblock-persons>.frame-4 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+    
+    }
+    
+    .one>.container>.subblock-persons>.frame-5,
+    .foure-folck>.container>.subblock-persons>.frame-5 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 2;
+    
+    }
+    
+    .one>.container>.subblock-persons>.frame-6,
+    .foure-folck>.container>.subblock-persons>.frame-6 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+    
+    }
+    
+    .one>.container>.subblock-persons>.frame-7,
+    .foure-folck>.container>.subblock-persons>.frame-7 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 3;
+    
+    }
+    .two-string>.container>.subblock-persons,
+    .three-accordeon>.container>.subblock-persons {
+        grid-template-columns: repeat(6, 11.5%);
+        grid-template-rows: repeat(2, 230px);
+    }
+    .five-brass>.container>.subblock-persons {
+        grid-template-columns: repeat(6, 11.5%);
+    }
+}
+/* ?============ 450px ================================================================== */
+@media all and (max-width: 450px) {
+    .one>.container>.subblock-persons,
+    .foure-folck>.container>.subblock-persons {
+    grid-template-columns: repeat(4, 15%);
+    grid-template-rows: repeat(4, 216px);
+    grid-row-gap: 16%;
+    grid-column-gap: 4%;
+    }
+    .one>.container>.subblock-persons>.frame-1,
+    .foure-folck>.container>.subblock-persons>.frame-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    
+    }
+    
+    .one>.container>.subblock-persons>.frame-2,
+    .foure-folck>.container>.subblock-persons>.frame-2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        
+    
+    
+    }
+    
+    .one>.container>.subblock-persons>.frame-3,
+    .foure-folck>.container>.subblock-persons>.frame-3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+    
+    }
+    
+    .one>.container>.subblock-persons>.frame-4,
+    .foure-folck>.container>.subblock-persons>.frame-4 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+    
+    }
+    
+    .one>.container>.subblock-persons>.frame-5,
+    .foure-folck>.container>.subblock-persons>.frame-5 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+    
+    }
+    
+    .one>.container>.subblock-persons>.frame-6,
+    .foure-folck>.container>.subblock-persons>.frame-6 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+    
+    }
+    
+    .one>.container>.subblock-persons>.frame-7,
+    .foure-folck>.container>.subblock-persons>.frame-7 {
+        grid-column-start: 4;
+        grid-column-end: 2;
+        grid-row-start: 4;
+    
+    }
+    .two-string>.container>.subblock-persons,
+    .three-accordeon>.container>.subblock-persons {
+        grid-template-columns: repeat(4, 15%);
+        grid-template-rows: repeat(3, 216px);
+        grid-row-gap: 35%;
+        grid-column-gap: 4%;
+        }
+        .two-string>.container>.subblock-persons>.frame-1,
+        .three-accordeon>.container>.subblock-persons>.frame-1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        
+        }
+        
+        .two-string>.container>.subblock-persons>.frame-2,
+        .three-accordeon>.container>.subblock-persons>.frame-2 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            
+        
+        
+        }
+        
+        .two-string>.container>.subblock-persons>.frame-3,
+        .three-accordeon>.container>.subblock-persons>.frame-3 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+        
+        }
+        
+        .two-string>.container>.subblock-persons>.frame-4,
+        .three-accordeon>.container>.subblock-persons>.frame-4 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 2;
+        
+        }
+        
+        .two-string>.container>.subblock-persons>.frame-5,
+        .three-accordeon>.container>.subblock-persons>.frame-5 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 3;
+        
+        }
+        .five-brass>.container>.subblock-persons {
+            grid-template-columns: repeat(4, 15%);
+            grid-template-rows: repeat(2, 216px);
+            grid-row-gap: 35%;
+            grid-column-gap: 4%;
+        }
+        .five-brass>.container>.subblock-persons>.frame-3 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+}
+}
+/* ?============ 380px ================================================================== */
+@media all and (max-width: 380px) {
+    .one>.container>.subblock-persons,
+    .foure-folck>.container>.subblock-persons {
+        grid-template-columns: repeat(4, 19%);
+        grid-template-rows: repeat(4, 224px);
+        grid-row-gap: 23%;
+        grid-column-gap: 4%;
+        margin-top: 27px;
+    }
+    .two-string>.container>.subblock-persons,
+    .three-accordeon>.container>.subblock-persons {
+        grid-template-columns: repeat(4, 19%);
+        grid-template-rows: repeat(3, 224px);
+        grid-row-gap: 42% ;
+        grid-column-gap: 4%;
+        margin-top: 27px;
+    }
+    .five-brass>.container>.subblock-persons {
+        grid-template-columns: repeat(4, 19%);
+        grid-template-rows: repeat(2, 224px);
+        grid-row-gap: 42% ;
+        grid-column-gap: 4%;
+        margin-top: 27px;
+    }
+
+}
+
+/* ?++++++++++++++++++++++++++++++ END +++++++++++++++++++++++++++++++++++++++++ */

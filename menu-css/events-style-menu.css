@@ -1,0 +1,236 @@
+/* html {scroll-behavior: smooth;} */
+
+
+.dws-menu [type="checkbox"],
+.dws-menu label.toggleSubmenu{
+ display: none;
+}
+.dws-menu label.toggleMenu{
+   background: linear-gradient(180deg, rgba(0,2,83,1) 32%, rgba(154,14,139,1) 78%, rgba(252,176,69,1) 100%);
+ display: none;
+padding-top: 19px;
+padding-bottom: 19px;
+padding-left: 9%;
+ text-transform: uppercase;
+ font-size: 14px;
+ cursor: pointer;
+ position: relative;
+}
+
+nav{
+   /* position: absolute; */
+   margin-top: 1.5%;
+    margin-left: -8%;
+
+}
+.dws-menu * {
+   margin: 0;
+   padding: 0;
+}
+
+.dws-menu ul,
+.dws-menu ol {
+   list-style: none;
+}
+
+.dws-menu>ul {
+   display: flex;
+   justify-content: center;
+}
+
+.dws-menu ul li a {
+   display: block;
+   background: linear-gradient(180deg, #7bf0e1 0%, #fff5f4 100%);
+   padding: 15px 30px 15px 30px;
+   font-size: 14px;
+   text-align: center;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #6a0000;
+   transition: all 1s ease;
+}
+
+.dws-menu ul li {
+   width: 11%;
+   position: relative;
+   border-right: 1px solid #b2b3b5;
+}
+.dws-menu ul li ul li {
+   width: 100%;
+   position: relative;
+   border-right: 1px solid #b2b3b5;
+}
+
+.dws-menu ul li:first-child {
+   border-left: 1px solid #b2b3b5;
+}
+
+.dws-menu ul li:last-child {
+   border-right: 1px solid #b2b3b5;
+}
+
+.dws-menu li a:hover {
+   background: linear-gradient(180deg, #09c5ffdb 0%, #ffefe1 100%);
+   color: #ffffff;
+   box-shadow: 1px 5px 10px -5px #000;
+   transition: all 1s ease;
+}
+
+.dws-menu li ul {
+   position: absolute;
+   width: 100%;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 1s ease;
+}
+
+.dws-menu li>ul li {
+   border: 1px solid #b2b3b5;
+}
+
+.dws-menu li>ul li a {
+   padding: 10px;
+   text-transform: none;
+   background: linear-gradient(180deg, #09c5ffdb 0%, #ffefe1 100%);
+}
+
+.dws-menu li>ul li ul {
+   position: absolute;
+   right: -150px;
+   top: 0;
+}
+.dws-menu li:hover>ul {
+     visibility:visible;
+   opacity: 1;
+   transition: all 1s ease;
+}
+/* ?---(media 1260px)================================================ */
+@media all and (max-width: 1260px){
+   .dws-menu ul li a {
+      padding: 12px 0px;     
+      font-size: 12px;
+}
+.dws-menu li>ul li a {
+   padding: 8px;
+}
+}
+/* ?=== 100px ================================================ */
+@media all and (max-width: 1000px){
+   .dws-menu ul li a {
+      padding: 10px 0px;     
+      font-size: 11px;
+}
+
+}
+
+
+/*?=========== 800px ================================================== */
+@media all and (max-width: 800px){
+   nav {
+      margin-left:0;
+   }
+   .dws-menu{
+    overflow: hidden;
+   }
+   .dws-menu ul li a {
+      padding: 10px 53px;
+      font-size: 12px;
+  }
+  .dws-menu li>ul li a {
+   padding-top: 8px;
+   padding-bottom: 8px;
+   padding-left: 11%;
+}
+  
+   .dws-menu ul{
+    display: block;
+    max-height: 0;
+    transition: max-height 0.3s;
+   }
+   .dws-menu ul li{
+      width: 100%;
+      text-align-last: left;
+   }
+   .dws-menu li>ul li ul{
+    position: absolute;
+    right: auto;
+    top: auto;
+   }
+   .dws-menu label.toggleMenu{
+    display: block;
+    background: #ffffff00;
+    /* background: linear-gradient(180deg, #1baec3 0%, #f5c08bf7 100%); */
+   }
+   input.toggleMenu:checked + label.toggleMenu{
+      background: linear-gradient(180deg, #370021a1 0%, #f5dbb6 100%);
+    color: #fff;
+   }
+   input.toggleMenu:checked ~ ul,
+   input.toggleSubmenu:checked ~ ul{
+    display: block;
+    position: relative;
+    max-height: 5000px;
+    transition: max-height 3s ease-in;
+   }
+
+   .dws-menu label.toggleSubmenu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+   }
+   input.toggleSubmenu:checked ~ a{
+      background: linear-gradient(180deg, #370021a1 0%, #6e01ebba 100%);
+    color: #fff;
+   }
+   .toggleMenu{
+      position: relative;
+      width: 100%;
+      height: 35px;
+      background-color: #454547;
+      cursor: pointer;
+   }
+   .toggleMenu span{
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 30px;
+      background: #ee6bf1;
+      border-radius: 10px;
+      transition: .5s;
+   }
+   .toggleMenu span:nth-child(1){
+      top: 8px;
+      transform-origin: left center;
+   }
+   .toggleMenu span:nth-child(2){
+      top: 50%;
+      transform:translateY(-55%);
+      transform-origin: left center;
+   }
+   .toggleMenu span:nth-child(3){
+      bottom: 4px;
+      transform:translateY(-100%);
+      transform-origin: left center;
+   }
+   input:checked ~ label span:nth-child(1){
+      transform: rotate(45deg);
+      top: 6px;
+      left: 10%;
+   }
+   input:checked ~ label span:nth-child(2){
+   width: 0px;
+      opacity: 0;
+   }
+   input:checked ~ label span:nth-child(3){
+      transform: rotate(-45deg);
+      bottom: 6px;
+      left: 10%;
+   }
+}
+
+   /* ----------------------------------------------------------------- */
+
